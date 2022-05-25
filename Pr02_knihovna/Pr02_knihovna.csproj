@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>G:\Novacek\Programovani\09.Metody\Metody\Pr02_knihovna\Pr02_knihovna.xml</DocumentationFile>
+  </PropertyGroup>
+
+</Project>

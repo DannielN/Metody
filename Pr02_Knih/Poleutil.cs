@@ -26,6 +26,7 @@ namespace Pr02_Knih
             }
             return pole;
         }
+
         /// <summary>
         /// Pole čísel uloží do listboxu
         /// </summary>
@@ -39,6 +40,32 @@ namespace Pr02_Knih
                 l.Items.Add(generuj[k]);
             }
         }
+
+        /// <summary>
+        /// Vraci string text bez cisel
+        /// </summary>
+        /// <param name="text"> text zadany uzivatelem </param>
+        /// <returns></returns>
+        static public string ZobraZ(string text)
+        {
+            string novy_text = string.Empty;
+
+            foreach(char znaky in text)
+            {
+                if (znaky != ' ')
+                {
+                    if (znaky < '0' || znaky > '9')
+                    {
+                        novy_text += znaky;
+                    }
+                }
+                else
+                {
+                }
+            }
+            return novy_text;
+        }
+
         /// <summary>
         /// Funkce počítá součet sudých čísel a počet lichých čísel
         /// </summary>
@@ -105,7 +132,12 @@ namespace Pr02_Knih
             generuj[generuj.Length - 1] = max;
         }
 
-        public static void Nulovani(int[] pole, int x, ListBox M)
+        /// <summary>
+        /// Funkce nuluje záporné číslo a provádí mocninu kladného čísla pomoci metody z jiné knihovny
+        /// </summary>
+        /// <param name="pole"> Pole zadaných čísel </param>
+        /// <param name="M"> ListBox kam voláme funkci mocniny z jiné knihovny</param>
+        public static void Nulovani(int[] pole, ListBox M)
         {
             int cislo = 0;
             for (int m = 0; m < pole.Length; m++)
@@ -124,6 +156,13 @@ namespace Pr02_Knih
                 M.Items.Add(vysledek);
             }
         }
+
+        /// <summary>
+        /// Funkce vrací počet cifer v intové podobě
+        /// </summary>
+        /// <param name="text"> string text z kterého počítame počet cifer </param>
+        /// <param name="soucetlich"> součet lichých cifer z textu </param>
+        /// <returns></returns>
         public static int ObsahujeCifru(string text, out int soucetlich)
         {
             soucetlich = 0;

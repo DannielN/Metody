@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{54D47C59-7F83-48A7-AE66-4159B3B52CEE}</ProjectGuid>
+    <ProjectGuid>{7B4D497F-2CAF-48F2-93BB-56902EF8AE6C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Pr06</RootNamespace>
-    <AssemblyName>Pr06</AssemblyName>
+    <RootNamespace>Pr08</RootNamespace>
+    <AssemblyName>Pr08</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -80,6 +80,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Pr02_Knih\PoleUtil.csproj">
+      <Project>{5CDAB1A9-8163-40F7-A6B7-AAC27A7C413F}</Project>
+      <Name>PoleUtil</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RetezUtil\RetezUtil.csproj">
       <Project>{810FB587-E9CA-4A51-8AA4-BB97D7D690A4}</Project>
       <Name>RetezUtil</Name>

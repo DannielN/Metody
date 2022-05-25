@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RetezUtil", "RetezUtil\Rete
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pr07", "Pr07\Pr07.csproj", "{043BD981-07AA-421B-8D9F-027840E92516}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pr08", "Pr08\Pr08.csproj", "{7B4D497F-2CAF-48F2-93BB-56902EF8AE6C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{043BD981-07AA-421B-8D9F-027840E92516}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{043BD981-07AA-421B-8D9F-027840E92516}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{043BD981-07AA-421B-8D9F-027840E92516}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B4D497F-2CAF-48F2-93BB-56902EF8AE6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B4D497F-2CAF-48F2-93BB-56902EF8AE6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B4D497F-2CAF-48F2-93BB-56902EF8AE6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B4D497F-2CAF-48F2-93BB-56902EF8AE6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

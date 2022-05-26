@@ -21,9 +21,10 @@ namespace Pr08
 
         private void button1_Click(object sender, EventArgs e)
         {
+            listBox1.Items.Clear();
             string text = textBox1.Text;
             string novy_text = Retezutil.Smaz(text);
-            textBox2.Text = Poleutil.ZobraZ(text);
+            Retezutil.Zobraz(listBox1, novy_text);
         }
     }
 }

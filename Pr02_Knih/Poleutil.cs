@@ -41,30 +41,6 @@ namespace Pr02_Knih
             }
         }
 
-        /// <summary>
-        /// Vraci string text bez cisel
-        /// </summary>
-        /// <param name="text"> text zadany uzivatelem </param>
-        /// <returns></returns>
-        static public string ZobraZ(string text)
-        {
-            string novy_text = string.Empty;
-
-            foreach(char znaky in text)
-            {
-                if (znaky != ' ')
-                {
-                    if (znaky < '0' || znaky > '9')
-                    {
-                        novy_text += znaky;
-                    }
-                }
-                else
-                {
-                }
-            }
-            return novy_text;
-        }
 
         /// <summary>
         /// Funkce počítá součet sudých čísel a počet lichých čísel

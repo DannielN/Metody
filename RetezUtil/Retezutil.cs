@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows.Forms;
 
 namespace RetezUtil
 {
@@ -28,7 +29,7 @@ namespace RetezUtil
         /// <param name="jiny_znak"> počítá počet jiných znaku než jsou čísla a písmena </param>
         /// <param name="prvcsl"> bool který zjištuje zda je počet všech znaku bez mezer prvočíslo </param>
         /// <returns></returns>
-        static public bool JeAlfanum(string text, out int maly_pismena, out int pocet_cifer, out int jiny_znak, out bool prvcsl)
+        static public bool JeAlfanum(string text, out int maly_pismena, out int pocet_cifer, out int jiny_znak)
         {
             bool je = true;
             maly_pismena = 0;
@@ -45,7 +46,7 @@ namespace RetezUtil
                     {
                         maly_pismena++;
                     }
-                    else if (znaky >= 'A' && znaky <= 'Z') /* Te92*/
+                    else if (znaky >= 'A' && znaky <= 'Z')
                     {
 
                     }
@@ -67,7 +68,6 @@ namespace RetezUtil
 
                 }
             }
-            prvcsl = Retezutil.Prvocislo(pocetznaku);
             return je;
         }
 
@@ -82,14 +82,11 @@ namespace RetezUtil
 
             foreach (char znaky in text)
             {
-                if (znaky != ' ')
-                {
                     if (znaky < '0' || znaky > '9')
                     {
                         novy_text += znaky;
                     }
-                }
-            }
+             }
             return novy_text;
         }
 
@@ -146,6 +143,15 @@ namespace RetezUtil
             }
 
             return obsahuje;
+        }
+
+        static public void Zobraz(ListBox L, string slova)
+        {
+            string[] slovo = slova.Split(' ');
+            for (int i = 0; i < slovo.Length; i++)
+            {
+                L.Items.Add(slovo[i]);
+            }
         }
     }
 }
